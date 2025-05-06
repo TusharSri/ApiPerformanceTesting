@@ -24,6 +24,7 @@ public class ProductController {
 
     @GetMapping("/all")
     ResponseEntity<List<ProductDTO>> getAllProducts() {
+        //This is dev branch
         return new ResponseEntity<>(productService.getAllProducts(), HttpStatus.OK);
     }
 
