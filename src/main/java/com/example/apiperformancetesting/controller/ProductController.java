@@ -30,6 +30,7 @@ public class ProductController {
 
     @GetMapping("/allAsync")
     ResponseEntity<List<ProductDTO>> getAllProductsAsync() {
+        // This is release change
         return new ResponseEntity<>(productService.getAllProducts(), HttpStatus.OK);
     }
 }
