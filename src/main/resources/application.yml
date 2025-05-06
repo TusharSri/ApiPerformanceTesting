@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: ApiPerformanceTesting
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/productperdb
+    username: root
+    password: 1234
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+    generate-ddl: true
