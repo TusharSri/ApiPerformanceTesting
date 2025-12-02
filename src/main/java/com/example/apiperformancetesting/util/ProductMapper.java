@@ -7,7 +7,7 @@ import org.mapstruct.factory.Mappers;
 
 @Mapper(componentModel = "spring") // Makes it a Spring Bean automatically
 public interface ProductMapper {
-
+    //mapper 
     ProductMapper INSTANCE = Mappers.getMapper(ProductMapper.class);
 
     ProductDTO toProductDTO(Product product);
